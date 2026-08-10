@@ -193,8 +193,8 @@ export default function GroundEntryPage() {
                                                             </SelectTrigger>
                                                         </FormControl>
                                                         <SelectContent>
-                                                            <SelectItem value="Active">Online</SelectItem>
-                                                            <SelectItem value="Pending">Offline</SelectItem>
+                                                            <SelectItem value="Online">Online</SelectItem>
+                                                            <SelectItem value="Offline">Offline</SelectItem>
                                                         </SelectContent>
                                                     </Select>
                                                     <FormMessage />

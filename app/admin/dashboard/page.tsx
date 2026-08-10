@@ -119,9 +119,8 @@ export default function AdminDashboardPage() {
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectItem value="all">All Status</SelectItem>
-                                    <SelectItem value="Active">Active</SelectItem>
-                                    <SelectItem value="Pending">Pending</SelectItem>
-                                    <SelectItem value="Draft">Draft</SelectItem>
+                                    <SelectItem value="Online">Online</SelectItem>
+                                    <SelectItem value="Offline">Pending</SelectItem>
                                 </SelectContent>
                             </Select>
                         </div>
@@ -174,9 +173,9 @@ export default function AdminDashboardPage() {
                                             <TableCell>
                                                 <Badge
                                                     variant={
-                                                        item.status === 'Active'
+                                                        item.status === 'Online'
                                                             ? 'default'
-                                                            : item.status === 'Pending'
+                                                            : item.status === 'Offline'
                                                                 ? 'secondary'
                                                                 : 'outline'
                                                     }
