@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
         loginMutation.mutate(values, {
             onSuccess: (data) => {
                 // Sonner Success Toast
-                toast.success(data.message || 'Login အောင်မြင်ပါသည်။');
+                toast.success(data.message || 'Login successful');
                 router.push('/admin/dashboard');
             },
             onError: (error: any) => {
