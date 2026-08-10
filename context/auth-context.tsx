@@ -32,8 +32,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
                 setAccessToken(data.accessToken);
 
+
                 const profileRes = await apiClient.get('/auth/me');
                 setUser(profileRes.data);
+
             } catch (error) {
                 setAccessToken(null);
                 setUser(null);
@@ -75,10 +77,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     );
 }
 
-export function useAuth() {
+export const useAuth = () => {
     const context = useContext(AuthContext);
-    if (!context) {
-        throw new Error('useAuth must be used within an AuthProvider');
-    }
+    if (!context) throw new Error('useAuth must be used within AuthProvider');
     return context;
-}
+};

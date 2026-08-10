@@ -39,7 +39,7 @@ export default function AdminLoginPage() {
             onSuccess: (data) => {
                 // Sonner Success Toast
                 toast.success(data.message || 'Login successful');
-                router.push('/admin/dashboard');
+                router.push('/dashboard');
             },
             onError: (error: any) => {
                 // Sonner Error Toast
