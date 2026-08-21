@@ -184,7 +184,7 @@ export default function AdminDashboardPage() {
                                             </TableCell>
                                             <TableCell className="text-right">
                                                 <Button variant="outline" size="sm" asChild>
-                                                    <Link href={`/admin/ground-entries/${item.id}`}>
+                                                    <Link href={`/ground-entries/${item.id}`}>
                                                         View Details
                                                     </Link>
                                                 </Button>
